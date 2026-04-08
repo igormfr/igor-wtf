@@ -4,7 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>igor.wtf</title>
-<link rel="icon" type="image/png" href="/Memoji.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/Memoji.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/Memoji.png">
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
@@ -126,16 +127,13 @@
   .lb-img-full.loaded::before,.lb-img-half.loaded::before{display:none}
   @keyframes lb-spin{to{transform:rotate(360deg)}}
 
-  /* Yellow entry fade overlay */
+  /* Yellow entry fade overlay — waits for .fade-out class to animate */
   .entry-fade{
     position:fixed;inset:0;z-index:999;background:#ebff3e;
-    pointer-events:none;
-    animation:entryFadeOut .6s cubic-bezier(.22,.61,.36,1) forwards;
+    pointer-events:none;opacity:1;
+    transition:opacity .6s cubic-bezier(.22,.61,.36,1);
   }
-  @keyframes entryFadeOut{
-    0%{opacity:1}
-    100%{opacity:0}
-  }
+  .entry-fade.fade-out{opacity:0}
 
   @media(max-width:900px){
     .lb-content{flex-direction:column;width:90vw;max-height:90vh;align-items:stretch}
@@ -189,7 +187,7 @@ const grid=document.getElementById("grid"),viewport=document.getElementById("vie
 window.addEventListener("mousemove",(e)=>{mx=e.clientX;});
 document.addEventListener("mouseleave",()=>{mx=null;});
 // Remove entry fade overlay after animation
-document.getElementById("entryFade").addEventListener("animationend",function(){this.remove();});
+document.getElementById("entryFade").addEventListener("transitionend",function(){this.remove();});
 
 function calcDims(){const vh=window.innerHeight,vr=BASE_VISIBLE_ROWS*zoom;CELL_SIZE=Math.round((vh-(vr-1)*GAP)/vr);GRID_W=TOTAL_COLS*CELL_SIZE+(TOTAL_COLS-1)*GAP;GRID_H=ROWS*CELL_SIZE+(ROWS-1)*GAP;CYCLE_W=GRID_W/COPIES;}
 function applySize(){grid.style.width=GRID_W+"px";grid.style.height=GRID_H+"px";grid.style.marginTop=-(GRID_H/2)+"px";}
@@ -468,7 +466,8 @@ let dragOffsetX=0,dragOffsetY=0;
   offset=-CYCLE_W + 1200;
   entryAnim=true; entryVel=-30;
   grid.style.transform="translateX("+offset+"px)";
-})();
+  // Reveal: fade out the yellow overlay now that grid is ready
+  requestAnimationFrame(()=>{document.getElementById("entryFade")?.classList.add("fade-out");});})();
 </script>
 </body>
 </html>
