@@ -179,7 +179,7 @@ const EDGE_ZONE=240,MAX_SPEED=5.5;
 const COL_PEAK=3.5,ROW_PEAK=2.0,COL_FALLOFF=8,ROW_FALLOFF=8;
 const ZOOM_MIN=0.62,ZOOM_MAX=1.0;
 let zoom=0.72,zoomTarget=0.72;
-const ZOOM_STEP=0.06,ZOOM_LERP=0.025,BASE_VISIBLE_ROWS=4.3;
+const ZOOM_STEP=0.035,ZOOM_LERP=0.06,BASE_VISIBLE_ROWS=4.3;
 let CELL_SIZE,GRID_W,GRID_H,CYCLE_W;
 let offset,vel=0,mx=null,hovRow=-1,hovCol=-1,lightboxOpen=false;
 const grid=document.getElementById("grid"),viewport=document.getElementById("viewport"),backdrop=document.getElementById("lightboxBackdrop");
@@ -364,12 +364,14 @@ let entryHovCol=-1;
 let currentEntryColPeak=ENTRY_COL_PEAK;
 let currentEntryRowPeak=ENTRY_ROW_PEAK;
 
+let isZooming=false;
+
 (function tick(){
   if(!lightboxOpen){
-    const pz=zoom;zoom+=(zoomTarget-zoom)*ZOOM_LERP;if(Math.abs(zoom-zoomTarget)<.001)zoom=zoomTarget;
+    const pz=zoom;zoom+=(zoomTarget-zoom)*ZOOM_LERP;if(Math.abs(zoom-zoomTarget)<.0001)zoom=zoomTarget;
 
-    // Original zoom logic
-    if(Math.abs(zoom-pz)>.0005){
+    // Zoom logic
+    if(Math.abs(zoom-pz)>.0001){
       const oc=CYCLE_W;calcDims();applySize();offset=(offset/oc)*CYCLE_W;
       if(hovCol>=0){grid.style.gridTemplateColumns=computeColTemplate(hovCol);grid.style.gridTemplateRows=computeRowTemplate(hovRow);}
     }
@@ -402,7 +404,6 @@ let currentEntryRowPeak=ENTRY_ROW_PEAK;
       if(speed<ENTRY_STOP_THRESHOLD){
         entryAnim=false;
         entryHovCol=-1;
-        // Grid is already very close to uniform since peaks lerped down to COL_PEAK/ROW_PEAK
         setDefault();
       }
     }
