@@ -189,7 +189,7 @@ document.addEventListener("mouseleave",()=>{mx=null;});
 // Remove entry fade overlay after animation
 document.getElementById("entryFade").addEventListener("transitionend",function(){this.remove();});
 
-function calcDims(){const vh=window.innerHeight,vr=BASE_VISIBLE_ROWS*zoom;CELL_SIZE=Math.round((vh-(vr-1)*GAP)/vr);GRID_W=TOTAL_COLS*CELL_SIZE+(TOTAL_COLS-1)*GAP;GRID_H=ROWS*CELL_SIZE+(ROWS-1)*GAP;CYCLE_W=GRID_W/COPIES;}
+function calcDims(){const vh=window.innerHeight,vr=BASE_VISIBLE_ROWS*zoom;CELL_SIZE=(vh-(vr-1)*GAP)/vr;GRID_W=TOTAL_COLS*CELL_SIZE+(TOTAL_COLS-1)*GAP;GRID_H=ROWS*CELL_SIZE+(ROWS-1)*GAP;CYCLE_W=GRID_W/COPIES;}
 function applySize(){grid.style.width=GRID_W+"px";grid.style.height=GRID_H+"px";grid.style.marginTop=-(GRID_H/2)+"px";}
 
 // Entry animation uses boosted peaks for dramatic distortion
