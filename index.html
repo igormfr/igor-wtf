@@ -176,16 +176,17 @@
       max-height:calc(100vh - 100px) !important;
       border-radius:16px !important;
       padding:6px !important;
-      padding-bottom:60px !important;
     }
+    /* Close button: top-left aligned with gallery edge */
     .lb-close{
-      top:14px;right:14px;width:44px;height:44px;font-size:18px;
+      top:14px;left:14px;right:auto !important;
+      width:44px;height:44px;font-size:18px;
       box-shadow:0 4px 20px rgba(0,0,0,.15);z-index:210;
       display:flex;align-items:center;justify-content:center;
       line-height:1;padding:0;
     }
 
-    /* Info wrapper: completely off-screen by default, slides up as overlay */
+    /* Info wrapper: completely hidden by default */
     .lb-info-wrapper{
       position:fixed !important;bottom:0;left:0;right:0;
       width:100% !important;max-width:100% !important;
@@ -193,10 +194,12 @@
       transform:translateY(100%);
       transition:transform .4s cubic-bezier(.22,.61,.36,1);
       pointer-events:none;
+      visibility:hidden;
     }
     .lb-info-wrapper.sheet-open{
       transform:translateY(0);
       pointer-events:all;
+      visibility:visible;
     }
     .lb-info{
       border-radius:20px 20px 0 0 !important;
@@ -223,14 +226,8 @@
     .lb-info-trigger:active{transform:translateX(-50%) scale(.95)}
     .lb-info-wrapper.sheet-open ~ .lb-info-trigger{opacity:0 !important;pointer-events:none !important}
 
-    /* Sheet backdrop overlay — above gallery, below info sheet */
-    .lb-sheet-overlay{
-      position:fixed;inset:0;z-index:209;
-      background:rgba(0,0,0,.45);
-      opacity:0;pointer-events:none;
-      transition:opacity .3s ease;
-    }
-    .lb-sheet-overlay.visible{opacity:1;pointer-events:all}
+    /* Sheet overlay removed — no dark overlay */
+    .lb-sheet-overlay{display:none !important}
   }
 
   /* ── Landscape lock overlay ── */
@@ -806,24 +803,23 @@ if(isTouchDevice){
   // ── Mobile Lightbox: Info button & bottom sheet ──
   const infoTrigger=document.getElementById("lbInfoTrigger");
   const infoWrapper=document.getElementById("lbInfoWrapper");
-  const sheetOverlay=document.getElementById("lbSheetOverlay");
 
   infoTrigger.addEventListener("click",(e)=>{
     e.stopPropagation();
     infoWrapper.classList.add("sheet-open");
-    sheetOverlay.classList.add("visible");
   });
 
-  sheetOverlay.addEventListener("click",()=>{
-    infoWrapper.classList.remove("sheet-open");
-    sheetOverlay.classList.remove("visible");
+  // Tap outside sheet to close it
+  backdrop.addEventListener("click",(e)=>{
+    if(infoWrapper.classList.contains("sheet-open") && !e.target.closest("#lbInfo") && !e.target.closest("#lbInfoTrigger")){
+      infoWrapper.classList.remove("sheet-open");
+    }
   });
 
   // Override closeLightbox to also close sheet
   const _origClose=closeLightbox;
   closeLightbox=function(){
     infoWrapper.classList.remove("sheet-open");
-    sheetOverlay.classList.remove("visible");
     _origClose();
   };
   document.getElementById("lightboxClose").removeEventListener("click",_origClose);
