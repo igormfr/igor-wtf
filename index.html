@@ -488,10 +488,10 @@ function mTag(it,iv,cls){
   let arStyle="";
   if(it.url){const m=it.url.match(/-(\d+)x(\d+)\./);if(m) arStyle=' style="aspect-ratio:'+m[1]+'/'+m[2]+'"';}
   if(!arStyle) arStyle=' style="aspect-ratio:16/9"';
-  if(iv) return '<div class="'+cls+'"'+arStyle+'><video data-src="'+escapeAttr(it.url)+'" preload="none" muted loop playsinline onloadeddata="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\')"></video></div>';
+  if(iv) return '<div class="'+cls+'"'+arStyle+'><video data-src="'+escapeAttr(it.url)+'" preload="none" muted loop playsinline onloadeddata="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\');requestAnimationFrame(positionMobileClose)"></video></div>';
   const imgW=cls.includes("half")?900:1600;
   const optUrl=sanityImg(it.url,imgW,90)||it.url||"";
-  return '<div class="'+cls+'"'+arStyle+'><img src="'+escapeAttr(optUrl)+'" alt="'+escapeAttr(it.caption)+'" loading="lazy" decoding="async" onload="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\')"></div>';
+  return '<div class="'+cls+'"'+arStyle+'><img src="'+escapeAttr(optUrl)+'" alt="'+escapeAttr(it.caption)+'" loading="lazy" decoding="async" onload="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\');requestAnimationFrame(positionMobileClose)"></div>';
 }
 
 let lazyVideoObserver=null;
@@ -586,8 +586,12 @@ function closeLightbox(){
   const close=document.getElementById("lightboxClose");
   dragOffsetX=0;dragOffsetY=0;
   info.style.transform="";info.classList.remove("dragging");
-  close.style.removeProperty("--lb-close-left");
-  close.style.removeProperty("--lb-close-top");
+  setTimeout(()=>{
+    if(!lightboxOpen){
+      close.style.removeProperty("--lb-close-left");
+      close.style.removeProperty("--lb-close-top");
+    }
+  },350);
   // Don't remove maxHeight here — it would flash full height during fade-out
   // maxHeight gets reset in openLightbox before new content is set
   document.getElementById("lbInfoScroll").removeEventListener("scroll",checkInfoFade);
