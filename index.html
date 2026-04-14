@@ -332,6 +332,9 @@ function sanityImg(url,w,q){
     return url+sep+'w='+width+'&fit=max&auto=format&q='+quality;
   }
 }
+function sanityHoverImg(url){
+  return sanityImg(url,900,88);
+}
 function escapeAttr(v){
   return String(v||"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 }
@@ -893,7 +896,7 @@ if(isTouchDevice){
   projects.forEach(p=>{const r=p.gridRow,c=p.gridCol;if(r==null||c==null||r<0||r>=ROWS||c<0||c>=BASE_COLS)return;
     const cell=cellData[r][c];cell._id=p._id;cell.hasPage=p.hasProjectPage!==false;cell.clickable=cell.hasPage;cell.title=p.title||"";cell.name=p.title||"";cell.showName=p.showName!==false;
     if(p.tags&&p.tags.length)cell.tag=p.tags.slice(0,2).map(t=>"#"+t).join("  ");
-    cell.likes=p.likes||0;cell.thumbnailUrl=sanityImg(p.thumbnailUrl,360,74);cell.titleColor=p.titleColor||null;cell.titleHoverColor=p.titleHoverColor||null;cell.gallery=p.gallery||[];cell.credits=p.credits||[];cell.description=p.description||"";cell.hoverType=p.hoverType||"color";cell.hoverColor=p.hoverColor||"#ebff3e";cell.hoverImageUrl=sanityImg(p.hoverImageUrl,400,74)||null;});
+    cell.likes=p.likes||0;cell.thumbnailUrl=sanityImg(p.thumbnailUrl,360,74);cell.titleColor=p.titleColor||null;cell.titleHoverColor=p.titleHoverColor||null;cell.gallery=p.gallery||[];cell.credits=p.credits||[];cell.description=p.description||"";cell.hoverType=p.hoverType||"color";cell.hoverColor=p.hoverColor||"#ebff3e";cell.hoverImageUrl=sanityHoverImg(p.hoverImageUrl)||null;});
   buildGrid();
   offset=-CYCLE_W + 1200;
   entryAnim=true; entryVel=-30;
