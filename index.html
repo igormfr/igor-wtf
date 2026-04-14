@@ -32,9 +32,10 @@
   .cell-heart{cursor:pointer;font-size:11px;line-height:1;transition:transform .2s ease,color .2s ease;user-select:none}
   .cell-heart:hover{transform:scale(1.3)}
   .cell-heart.liked{color:#ff3b5c}
-  .cell-thumb-wrap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(1.33);width:30%;aspect-ratio:1;opacity:0;transition:opacity .1s ease,transform .4s cubic-bezier(.22,.61,.36,1);pointer-events:none;z-index:2}
-  .cell:hover .cell-thumb-wrap{opacity:1;transform:translate(-50%,-50%) scale(1);transition:opacity .3s ease,transform .7s cubic-bezier(.22,.61,.36,1)}
-  .cell-thumb-wrap img,.cell-thumb-wrap video{width:100%;height:100%;object-fit:cover;border-radius:5px;display:block}
+  .cell-thumb-wrap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:30%;aspect-ratio:1;opacity:0;transition:opacity .1s ease;pointer-events:none;z-index:2;will-change:opacity}
+  .cell:hover .cell-thumb-wrap{opacity:1;transform:translate(-50%,-50%);transition:opacity .3s ease}
+  .cell-thumb-wrap img,.cell-thumb-wrap video{width:100%;height:100%;object-fit:cover;border-radius:5px;display:block;transform:scale(1.33);transform-origin:center;transition:transform .4s cubic-bezier(.22,.61,.36,1);will-change:transform}
+  .cell:hover .cell-thumb-wrap img,.cell:hover .cell-thumb-wrap video{transform:scale(1);transition:transform .7s cubic-bezier(.22,.61,.36,1)}
 
   .lightbox-backdrop{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .45s cubic-bezier(.22,.61,.36,1);background:rgba(0,0,0,0)}
   .lightbox-backdrop.open{opacity:1;pointer-events:all;background:rgba(180,180,180,.35)}
@@ -154,13 +155,15 @@
     .edge-fade{display:none}
     .cell:hover{background:#e0e0e0}
     .cell:hover .cell-hover-img{opacity:0}
-    .cell:hover .cell-thumb-wrap{opacity:0;transform:translate(-50%,-50%) scale(1.33)}
+    .cell:hover .cell-thumb-wrap{opacity:0;transform:translate(-50%,-50%)}
+    .cell:hover .cell-thumb-wrap img,.cell:hover .cell-thumb-wrap video{transform:scale(1.33)}
     .cell:hover .cell-likes-pill{background:transparent;color:#aaa;box-shadow:none;padding:0}
 
     /* Tap-expand: mirror full desktop hover state */
     .cell.touch-active{transition:background .25s ease}
     .cell.touch-active .cell-hover-img{opacity:1 !important}
-    .cell.touch-active .cell-thumb-wrap{opacity:1 !important;transform:translate(-50%,-50%) scale(1) !important;transition:opacity .3s ease,transform .7s cubic-bezier(.22,.61,.36,1) !important}
+    .cell.touch-active .cell-thumb-wrap{opacity:1 !important;transform:translate(-50%,-50%) !important;transition:opacity .3s ease !important}
+    .cell.touch-active .cell-thumb-wrap img,.cell.touch-active .cell-thumb-wrap video{transform:scale(1) !important;transition:transform .7s cubic-bezier(.22,.61,.36,1) !important}
     .cell.touch-active .cell-likes-pill{background:#fff !important;color:#333 !important;box-shadow:0 2px 8px rgba(0,0,0,.08) !important;padding:4px 8px !important}
     .cell.touch-active.clickable::after{
       content:"OPEN";
@@ -176,32 +179,34 @@
     .lb-content{
       flex-direction:column !important;
       width:calc(100vw - 24px) !important;max-width:calc(100vw - 24px) !important;
-      max-height:calc(100vh - 24px) !important;
+      height:calc(100vh - 24px) !important;max-height:calc(100vh - 24px) !important;
       gap:0 !important;align-items:stretch !important;
       left:50% !important;top:50% !important;transform:translate(-50%,-50%) !important;
+      overflow:hidden;border-radius:16px;
     }
     .lb-images{
       flex:1 !important;
-      max-height:calc(100vh - 100px) !important;
+      height:100% !important;max-height:none !important;
       border-radius:16px !important;
       padding:6px !important;
     }
-    /* Close button: top-left aligned with gallery edge */
+    /* Close button: top-right aligned with gallery edge */
     .lb-close{
-      top:14px;left:14px;right:auto !important;
+      top:14px;right:14px !important;left:auto !important;
       width:44px;height:44px;font-size:18px;
-      box-shadow:0 4px 20px rgba(0,0,0,.15);z-index:210;
+      box-shadow:0 4px 20px rgba(0,0,0,.15);z-index:220;
       display:flex;align-items:center;justify-content:center;
       line-height:1;padding:0;
     }
+    .lb-close:active{background:#ebff3e;transform:scale(1.05)}
 
-    /* Info wrapper: completely hidden by default */
+    /* Info wrapper: slides over the gallery and is clipped by the gallery frame */
     .lb-info-wrapper{
-      position:fixed !important;bottom:0;left:0;right:0;
+      position:absolute !important;bottom:0;left:0;right:0;
       width:100% !important;max-width:100% !important;
-      z-index:210;
+      z-index:212;
       transform:translateY(100%);
-      transition:transform .4s cubic-bezier(.22,.61,.36,1);
+      transition:transform .4s cubic-bezier(.22,.61,.36,1),visibility 0s linear .4s;
       pointer-events:none;
       visibility:hidden;
     }
@@ -209,32 +214,42 @@
       transform:translateY(0);
       pointer-events:all;
       visibility:visible;
+      transition:transform .4s cubic-bezier(.22,.61,.36,1),visibility 0s;
     }
     .lb-info{
-      border-radius:20px 20px 0 0 !important;
+      border-radius:16px 16px 0 0 !important;
       max-height:55vh !important;
       box-shadow:0 -10px 40px rgba(0,0,0,.18) !important;
       opacity:1 !important;transform:none !important;
       touch-action:pan-y;
     }
-    .lb-info-scroll{overflow-y:auto}
+    .lb-info-scroll{overflow-y:auto;padding-bottom:88px}
 
     /* Info trigger button */
     .lb-info-trigger{
       position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
-      z-index:208;
+      z-index:218;
       background:#ebff3e;color:#111;border:none;
       font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:11px;
       letter-spacing:.8px;text-transform:uppercase;
-      padding:12px 32px;border-radius:50px;
+      display:inline-flex;align-items:center;justify-content:center;
+      min-width:96px;padding:12px 32px;border-radius:50px;
       box-shadow:0 6px 24px rgba(0,0,0,.12);
       cursor:pointer;
       opacity:0;pointer-events:none;
-      transition:opacity .3s ease,transform .2s ease;
+      transition:opacity .3s ease,transform .2s ease,min-width .35s cubic-bezier(.22,.61,.36,1),padding .35s cubic-bezier(.22,.61,.36,1);
     }
+    .lb-info-trigger::after{
+      content:"\00d7";
+      display:inline-block;width:0;margin-left:0;
+      overflow:hidden;opacity:0;
+      font-size:12px;line-height:1;
+      transition:width .35s cubic-bezier(.22,.61,.36,1),margin-left .35s cubic-bezier(.22,.61,.36,1),opacity .2s ease;
+    }
+    .lb-info-trigger.sheet-visible{min-width:116px;padding:12px 28px}
+    .lb-info-trigger.sheet-visible::after{width:8px;margin-left:8px;opacity:1}
     .lightbox-backdrop.open .lb-info-trigger{opacity:1;pointer-events:all}
     .lb-info-trigger:active{transform:translateX(-50%) scale(.95)}
-    .lb-info-wrapper.sheet-open ~ .lb-info-trigger{opacity:0 !important;pointer-events:none !important}
 
     /* Sheet overlay removed — no dark overlay */
     .lb-sheet-overlay{display:none !important}
@@ -278,7 +293,7 @@
     <div class="lb-images" id="lbImages"></div>
   </div>
   <div class="lb-sheet-overlay" id="lbSheetOverlay"></div>
-  <button class="lb-info-trigger" id="lbInfoTrigger">INFO</button>
+  <button class="lb-info-trigger" id="lbInfoTrigger" aria-controls="lbInfo" aria-expanded="false">INFO</button>
 </div>
 <script>
 const _isTouch=('ontouchstart' in window)||(navigator.maxTouchPoints>0);
@@ -898,21 +913,28 @@ if(isTouchDevice){
   const infoScroll=document.getElementById("lbInfoScroll");
   let sheetDrag=false,sheetStartY=0,sheetDeltaY=0,sheetCanDrag=false;
 
+  function setInfoTriggerOpen(isOpen){
+    infoTrigger.classList.toggle("sheet-visible",isOpen);
+    infoTrigger.setAttribute("aria-expanded",isOpen?"true":"false");
+  }
   function openInfoSheet(){
     infoWrapper.style.transition="";
     infoWrapper.style.transform="";
     infoWrapper.classList.add("sheet-open");
+    setInfoTriggerOpen(true);
   }
   function closeInfoSheet(){
     infoWrapper.style.transition="";
     infoWrapper.style.transform="";
     infoWrapper.classList.remove("sheet-open");
+    setInfoTriggerOpen(false);
     sheetDrag=false;sheetDeltaY=0;sheetCanDrag=false;
   }
 
   infoTrigger.addEventListener("click",(e)=>{
     e.stopPropagation();
-    openInfoSheet();
+    if(infoWrapper.classList.contains("sheet-open")) closeInfoSheet();
+    else openInfoSheet();
   });
 
   infoPanel.addEventListener("touchstart",(e)=>{
