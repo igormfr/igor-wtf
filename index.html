@@ -317,9 +317,25 @@ async function patchLike(id){try{await fetch("/api/like",{method:"POST",headers:
 
 // Bandwidth optimization: append Sanity CDN image transforms
 function sanityImg(url,w,q){
-  if(!url||!url.includes('sanity.io'))return url;
-  const sep=url.includes('?')?'&':'?';
-  return url+sep+'w='+w+'&auto=format&q='+(q||80);
+  if(!url||!url.includes('sanity.io')||isGifAsset(url))return url;
+  const width=Math.round(w),quality=q||90;
+  try{
+    const u=new URL(url);
+    u.searchParams.set('w',width);
+    u.searchParams.set('fit','max');
+    u.searchParams.set('auto','format');
+    u.searchParams.set('q',quality);
+    return u.toString();
+  }catch(e){
+    const sep=url.includes('?')?'&':'?';
+    return url+sep+'w='+width+'&fit=max&auto=format&q='+quality;
+  }
+}
+function isGifAsset(url){
+  return /\.gif(?:\?|$)/i.test(url||"");
+}
+function escapeAttr(v){
+  return String(v||"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 }
 function buildGrid(){
   calcDims();applySize();setDefault();grid.innerHTML="";
@@ -398,10 +414,46 @@ function mTag(it,iv,cls){
   let arStyle="";
   if(it.url){const m=it.url.match(/-(\d+)x(\d+)\./);if(m) arStyle=' style="aspect-ratio:'+m[1]+'/'+m[2]+'"';}
   if(!arStyle) arStyle=' style="aspect-ratio:16/9"';
-  if(iv) return '<div class="'+cls+'"'+arStyle+'><video src="'+it.url+'" autoplay muted loop playsinline onloadeddata="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\')"></video></div>';
-  const imgW=cls.includes("half")?600:1200;
-  const optUrl=sanityImg(it.url,imgW,85)||it.url||"";
-  return '<div class="'+cls+'"'+arStyle+'><img src="'+optUrl+'" alt="'+(it.caption||"")+'" loading="lazy" onload="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\')"></div>';
+  if(iv) return '<div class="'+cls+'"'+arStyle+'><video data-src="'+escapeAttr(it.url)+'" preload="none" muted loop playsinline onloadeddata="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\')"></video></div>';
+  const imgW=cls.includes("half")?900:1600;
+  const optUrl=sanityImg(it.url,imgW,90)||it.url||"";
+  return '<div class="'+cls+'"'+arStyle+'><img src="'+escapeAttr(optUrl)+'" alt="'+escapeAttr(it.caption)+'" loading="lazy" decoding="async" onload="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\')"></div>';
+}
+
+let lazyVideoObserver=null;
+function setupLazyVideos(root){
+  if(lazyVideoObserver){lazyVideoObserver.disconnect();lazyVideoObserver=null;}
+  const videos=Array.from(root.querySelectorAll("video[data-src]"));
+  if(!videos.length)return;
+  const loadVideo=(video)=>{
+    if(video.src||!video.dataset.src)return;
+    video.src=video.dataset.src;
+    video.load();
+  };
+  if(!("IntersectionObserver" in window)){
+    videos.forEach((video)=>{loadVideo(video);video.play().catch(()=>{});});
+    return;
+  }
+  lazyVideoObserver=new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+      const video=entry.target;
+      if(entry.isIntersecting){
+        loadVideo(video);
+        video.play().catch(()=>{});
+      }else{
+        video.pause();
+      }
+    });
+  },{root,rootMargin:"800px 0px",threshold:0.01});
+  videos.forEach((video)=>lazyVideoObserver.observe(video));
+}
+function stopLazyVideos(){
+  if(lazyVideoObserver){lazyVideoObserver.disconnect();lazyVideoObserver=null;}
+  document.querySelectorAll("#lbImages video").forEach((video)=>{
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+  });
 }
 
 function openLightbox(cfg){
@@ -411,7 +463,7 @@ function openLightbox(cfg){
   // Reset drag transform and maxHeight from previous lightbox
   dragOffsetX=0;dragOffsetY=0;
   info.style.transform="";info.style.maxHeight="";info.classList.remove("dragging");
-  const lb=document.getElementById("lbImages");lb.scrollTop=0;lb.innerHTML=renderGallery(cfg.gallery);
+  const lb=document.getElementById("lbImages");lb.scrollTop=0;lb.innerHTML=renderGallery(cfg.gallery);setupLazyVideos(lb);
 
   let cr="";
   if(cfg.credits&&cfg.credits.length){cr='<div class="lb-info-divider"></div>';cfg.credits.forEach(c=>{let v=c.value||"";if(c.url)v='<a href="'+c.url+'" target="_blank" rel="noopener">'+v+'</a>';cr+='<div class="lb-info-credit"><div class="lb-info-credit-label">'+(c.label||"")+'</div><div class="lb-info-credit-value">'+v+'</div></div>';});}
@@ -447,7 +499,7 @@ function closeLightbox(){
   // Don't remove maxHeight here — it would flash full height during fade-out
   // maxHeight gets reset in openLightbox before new content is set
   document.getElementById("lbInfoScroll").removeEventListener("scroll",checkInfoFade);
-  document.querySelectorAll("#lbImages video").forEach(v=>v.pause());
+  stopLazyVideos();
 }
 document.getElementById("lightboxClose").addEventListener("click",closeLightbox);
 
@@ -832,7 +884,7 @@ if(isTouchDevice){
   projects.forEach(p=>{const r=p.gridRow,c=p.gridCol;if(r==null||c==null||r<0||r>=ROWS||c<0||c>=BASE_COLS)return;
     const cell=cellData[r][c];cell._id=p._id;cell.hasPage=p.hasProjectPage!==false;cell.clickable=cell.hasPage;cell.title=p.title||"";cell.name=p.title||"";cell.showName=p.showName!==false;
     if(p.tags&&p.tags.length)cell.tag=p.tags.slice(0,2).map(t=>"#"+t).join("  ");
-    cell.likes=p.likes||0;cell.thumbnailUrl=sanityImg(p.thumbnailUrl,400);cell.titleColor=p.titleColor||null;cell.titleHoverColor=p.titleHoverColor||null;cell.gallery=p.gallery||[];cell.credits=p.credits||[];cell.description=p.description||"";cell.hoverType=p.hoverType||"color";cell.hoverColor=p.hoverColor||"#ebff3e";cell.hoverImageUrl=sanityImg(p.hoverImageUrl,400)||null;});
+    cell.likes=p.likes||0;cell.thumbnailUrl=p.thumbnailUrl;cell.titleColor=p.titleColor||null;cell.titleHoverColor=p.titleHoverColor||null;cell.gallery=p.gallery||[];cell.credits=p.credits||[];cell.description=p.description||"";cell.hoverType=p.hoverType||"color";cell.hoverColor=p.hoverColor||"#ebff3e";cell.hoverImageUrl=p.hoverImageUrl||null;});
   buildGrid();
   offset=-CYCLE_W + 1200;
   entryAnim=true; entryVel=-30;
