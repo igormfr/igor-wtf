@@ -162,6 +162,15 @@
     .cell.touch-active .cell-hover-img{opacity:1 !important}
     .cell.touch-active .cell-thumb-wrap{opacity:1 !important;transform:translate(-50%,-50%) scale(1) !important;transition:opacity .3s ease,transform .7s cubic-bezier(.22,.61,.36,1) !important}
     .cell.touch-active .cell-likes-pill{background:#fff !important;color:#333 !important;box-shadow:0 2px 8px rgba(0,0,0,.08) !important;padding:4px 8px !important}
+    .cell.touch-active.clickable::after{
+      content:"OPEN";
+      position:absolute;right:10px;top:10px;z-index:4;
+      background:#fff;color:#111;border-radius:8px;
+      font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:9px;
+      letter-spacing:0;padding:5px 7px;line-height:1;
+      box-shadow:0 2px 8px rgba(0,0,0,.08);
+      pointer-events:none;
+    }
 
     /* Lightbox mobile: near-fullscreen gallery card */
     .lb-content{
@@ -206,6 +215,7 @@
       max-height:55vh !important;
       box-shadow:0 -10px 40px rgba(0,0,0,.18) !important;
       opacity:1 !important;transform:none !important;
+      touch-action:pan-y;
     }
     .lb-info-scroll{overflow-y:auto}
 
@@ -884,23 +894,70 @@ if(isTouchDevice){
   // ── Mobile Lightbox: Info button & bottom sheet ──
   const infoTrigger=document.getElementById("lbInfoTrigger");
   const infoWrapper=document.getElementById("lbInfoWrapper");
+  const infoPanel=document.getElementById("lbInfo");
+  const infoScroll=document.getElementById("lbInfoScroll");
+  let sheetDrag=false,sheetStartY=0,sheetDeltaY=0,sheetCanDrag=false;
+
+  function openInfoSheet(){
+    infoWrapper.style.transition="";
+    infoWrapper.style.transform="";
+    infoWrapper.classList.add("sheet-open");
+  }
+  function closeInfoSheet(){
+    infoWrapper.style.transition="";
+    infoWrapper.style.transform="";
+    infoWrapper.classList.remove("sheet-open");
+    sheetDrag=false;sheetDeltaY=0;sheetCanDrag=false;
+  }
 
   infoTrigger.addEventListener("click",(e)=>{
     e.stopPropagation();
-    infoWrapper.classList.add("sheet-open");
+    openInfoSheet();
   });
+
+  infoPanel.addEventListener("touchstart",(e)=>{
+    if(!infoWrapper.classList.contains("sheet-open")||e.touches.length!==1)return;
+    sheetDrag=true;
+    sheetCanDrag=infoScroll.scrollTop<=0;
+    sheetStartY=e.touches[0].clientY;
+    sheetDeltaY=0;
+  },{passive:true});
+
+  infoPanel.addEventListener("touchmove",(e)=>{
+    if(!sheetDrag||e.touches.length!==1)return;
+    sheetDeltaY=e.touches[0].clientY-sheetStartY;
+    if(sheetDeltaY>0&&sheetCanDrag){
+      e.preventDefault();
+      const y=Math.min(sheetDeltaY,window.innerHeight*0.45);
+      infoWrapper.style.transition="none";
+      infoWrapper.style.transform="translateY("+y+"px)";
+    }
+  },{passive:false});
+
+  function finishSheetDrag(){
+    if(!sheetDrag)return;
+    const shouldClose=sheetCanDrag&&sheetDeltaY>80;
+    sheetDrag=false;
+    infoWrapper.style.transition="";
+    if(shouldClose)closeInfoSheet();
+    else infoWrapper.style.transform="";
+    sheetDeltaY=0;sheetCanDrag=false;
+  }
+
+  infoPanel.addEventListener("touchend",finishSheetDrag,{passive:true});
+  infoPanel.addEventListener("touchcancel",finishSheetDrag,{passive:true});
 
   // Tap outside sheet to close it
   backdrop.addEventListener("click",(e)=>{
     if(infoWrapper.classList.contains("sheet-open") && !e.target.closest("#lbInfo") && !e.target.closest("#lbInfoTrigger")){
-      infoWrapper.classList.remove("sheet-open");
+      closeInfoSheet();
     }
   });
 
   // Override closeLightbox to also close sheet
   const _origClose=closeLightbox;
   closeLightbox=function(){
-    infoWrapper.classList.remove("sheet-open");
+    closeInfoSheet();
     _origClose();
   };
   document.getElementById("lightboxClose").removeEventListener("click",_origClose);
