@@ -320,6 +320,7 @@
 const _isTouch=('ontouchstart' in window)||(navigator.maxTouchPoints>0);
 const SANITY_ID="ty87kenq",SANITY_DATASET="production";
 const SANITY_CDN="https://"+SANITY_ID+".apicdn.sanity.io/v2024-01-01";
+const STATIC_PROJECTS_URL="/data/projects.snapshot.json";
 
 const GAP=5,BASE_COLS=10,COPIES=3,TOTAL_COLS=BASE_COLS*COPIES,ROWS=6;
 const EDGE_ZONE=240,MAX_SPEED=5.5;
@@ -354,8 +355,33 @@ for(let r=0;r<ROWS;r++){cellData[r]=[];for(let c=0;c<BASE_COLS;c++)cellData[r][c
 function getCfg(r,c){return cellData[r%ROWS][((c%BASE_COLS)+BASE_COLS)%BASE_COLS];}
 
 async function fetchProjects(){
+  let projects=[];
+  try{
+    const res=await fetch(STATIC_PROJECTS_URL,{cache:"no-store"});
+    if(!res.ok)throw new Error("Static projects fetch failed: "+res.status);
+    projects=await res.json();
+  }catch(e){
+    console.warn("Static project snapshot unavailable, falling back to Sanity:",e);
+    projects=await fetchSanityProjects();
+  }
+  const liveLikes=await fetchLiveLikes();
+  if(liveLikes)projects.forEach((p)=>{if(p&&p._id&&liveLikes[p._id]!=null)p.likes=liveLikes[p._id];});
+  return projects;
+}
+async function fetchSanityProjects(){
   const q=encodeURIComponent('*[_type=="project"]{_id,title,slug,description,likes,gridRow,gridCol,tags,hasProjectPage,showName,hoverType,"hoverColor":hoverColor.hex,"titleColor":titleColor.hex,"titleHoverColor":titleHoverColor.hex,"thumbnailUrl":thumbnail.asset->url,"thumbnailVideoUrl":thumbnailVideo.asset->url,"hoverImageUrl":hoverImage.asset->url,"hoverVideoUrl":hoverVideo.asset->url,gallery[]{"_type":_type,layout,caption,"url":asset->url,"mimeType":asset->mimeType},credits[]{label,value,"url":link}}');
   try{const res=await fetch(SANITY_CDN+"/data/query/"+SANITY_DATASET+"?query="+q);const data=await res.json();return data.result||[];}catch(e){console.error("Sanity fetch error:",e);return[];}
+}
+async function fetchLiveLikes(){
+  try{
+    const res=await fetch("/api/likes",{cache:"no-store"});
+    if(!res.ok)throw new Error("Likes fetch failed: "+res.status);
+    const data=await res.json();
+    return data.likes||null;
+  }catch(e){
+    console.warn("Live likes unavailable, using snapshot likes:",e);
+    return null;
+  }
 }
 function hasLiked(id){return localStorage.getItem("liked_"+id)==="1";}
 function setLiked(id){localStorage.setItem("liked_"+id,"1");}
@@ -389,7 +415,7 @@ function isVideoUrl(url){
 function createCellMedia(url){
   if(isVideoUrl(url)){
     const video=document.createElement("video");
-    video.src=url;video.muted=true;video.loop=true;video.playsInline=true;video.preload="auto";
+    video.src=url;video.muted=true;video.loop=true;video.playsInline=true;video.preload="metadata";
     video.setAttribute("playsinline","");video.setAttribute("webkit-playsinline","");
     return video;
   }

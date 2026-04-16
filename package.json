@@ -1,5 +1,10 @@
 {
   "name": "igor-wtf",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "sync:r2": "node scripts/sync-sanity-r2.mjs",
+    "sync:r2:dry": "node scripts/sync-sanity-r2.mjs --dry-run",
+    "sync:r2:force": "node scripts/sync-sanity-r2.mjs --force"
+  }
 }

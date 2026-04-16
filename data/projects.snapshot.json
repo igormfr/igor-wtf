@@ -1,0 +1,2508 @@
+[
+  {
+    "_id": "28125320-64e6-41cf-bb2a-1b95bf42eb7f",
+    "title": "Winnin",
+    "slug": null,
+    "description": "Winnin and ABI teamed up during COVID times with the goal of making people's lives better. Data science was the key to translate the needs of consumers into services that would really fulfill them.",
+    "likes": 2,
+    "gridRow": 1,
+    "gridCol": 0,
+    "tags": [
+      "motion",
+      "3d"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/3e14cad53d18573aa47237082f6d6b4fc140dff0-1150x900.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/26f529da2c0cbbf183077ecc7dbc6e4226b46b16-800x450.gif",
+        "mimeType": "image/gif"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset02",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/765acf1d0a1adad3dafd8566077e0551b765a80e-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/7a8a455552ec0a3e282fc53842a2acfe30dba01c.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/796378145d834d43f2d559a29699944b7d211135-600x1067.gif",
+        "mimeType": "image/gif"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/45959a17a369a7b0614c3337786f10fb4dcaa74e.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset06",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/3810fa24a92230ed3b749657cf330ab329ccacc8-800x450.gif",
+        "mimeType": "image/gif"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset07",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/5ebb3654130a9318eb15fc7bdacbb76baa37dcc5-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Copywriter:",
+        "url": null,
+        "value": "Ana clara Tavora"
+      },
+      {
+        "label": "Design, Editing, 3D and Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "28ec9315-450b-4551-b656-541dd4784f2e",
+    "title": "5/3",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 3,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "29ab10b7-282b-4515-afbb-ebaf79839f1c",
+    "title": "System Update",
+    "slug": null,
+    "description": "System Update é um noticiário ao vivo em horário nobre apresentado pelo autor e jornalista vencedor do Pulitzer Glenn Greenwald. \n\nO programa aborda temas contemporâneos com análises precisas e anti-sistêmicas, além de reportagens investigativas, sem se prender a nenhum dogma ou facção.\n\n\n\n\n\n\n\t\n\n",
+    "likes": 2,
+    "gridRow": 3,
+    "gridCol": 1,
+    "tags": [
+      "id",
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": null,
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/9f97db492c3654b87575acba6423355f2d730ea2-640x640.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/067efb236a183cffd1f49e85043496e359fb11cf.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/56b24264bc03ef780d54e84578e763f41a090850-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset02b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/dded36ab8ffefdd1c87918f13bee1d0316277380.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/a8e05ecfcf426146b3798b4d5f3e8fd65ee202f2-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/ac9e2e4491a89391e99496b326b6f0c3a21ca101.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/91ce9f348182a619aba9a32e92c3fe37d70c0090-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset06a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/26fb8a8b6eeb98286f9f4142fa6f71b4fe4cc37b-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset06b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/942afbeb597eb5af92199a5a5a2e47a572588bdf-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset07",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/2540931e23ff97147f94f5db363ac8f979a80b92-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset08",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/306f8640deead97d4d32cc5283ebd367e2fd1bc1.mp4",
+        "mimeType": "video/mp4"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Lucas Noel, Igor Fajardo"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "2be99e3d-31d0-4a7e-9a7b-b43bd5bc2208",
+    "title": "Lores",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 1,
+    "gridCol": 3,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/b7b40e8f8a97c2ddc6c20f58666e0f50b16d7e72-1080x1080.jpg",
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "2d87b26c-4dcc-4cd2-8707-fda4753d0a6e",
+    "title": "5/5",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 5,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "2eeb7214-c0ec-435a-9b52-ad237d8bcb0e",
+    "title": "Me manda um email!\nvamo@igor.wtf",
+    "slug": null,
+    "description": null,
+    "likes": 5,
+    "gridRow": 3,
+    "gridCol": 5,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": "#161616",
+    "titleColor": null,
+    "titleHoverColor": "#eaeaea",
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "3309414e-12c8-4654-868c-d0071103a0a3",
+    "title": "Cinza",
+    "slug": null,
+    "description": "Cinza é uma agência de brand experience carioca com a proposta de ser uma alternativa ao marketing convencional.\n\n",
+    "likes": 0,
+    "gridRow": 4,
+    "gridCol": 8,
+    "tags": [
+      "id",
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": null,
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/c00c2f08968c1bf32766b39b909ba42f9d641d85-640x640.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/e24587c68704d910bcf0e4d32180c1b284476d7f.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/47d99d0348b00200736c5a0927c57d2cbe600fe8.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset0b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/1ca451ce4e34686c40f1f783aa564d0b89d0ea16-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/489398a47363fff6ed10ebc6c0dd28c2a6d4947a-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/919976f512b4e1446a4a1cf9c1c40e917f6608d4-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/dea73198aa027aed2746efdfd8199932fd49a1c7-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Lucas Noel, Igor Fajardo"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "399ed72d-9a2f-4ba6-a11a-5327601b7335",
+    "title": "Headshot",
+    "slug": null,
+    "description": null,
+    "likes": 8,
+    "gridRow": 2,
+    "gridCol": 7,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/3fdd0f75134738b10e0b0a0b2b1d5816e46e6784-1080x1080.jpg",
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "3a0ab46d-3327-41af-a264-9e9b8b067dd6",
+    "title": "Marker",
+    "slug": null,
+    "description": null,
+    "likes": 3,
+    "gridRow": 3,
+    "gridCol": 3,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/04e8b13cb17841cea7f8ca6371e64d450b737c46.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "3c5bf855-0f91-4750-9bd3-dee4dff54a67",
+    "title": "Flamingo (Coconut Cult)",
+    "slug": null,
+    "description": null,
+    "likes": 4,
+    "gridRow": 1,
+    "gridCol": 8,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/51be265eff940f429f5cce378098c2fb11028830.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "49cb9d38-0210-400c-b6a1-93637a726235",
+    "title": "Quality Experience",
+    "slug": null,
+    "description": "Quality Experience (QX) is an independent, full-service advertising agency on a mission to foster purposeful interactions between brands and their audiences by creating quality experiences. QX applies meticulous care to every aspect of their work, creating an environment where bold ideas can flourish.",
+    "likes": 3,
+    "gridRow": 3,
+    "gridCol": 4,
+    "tags": [
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": null,
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/7c161539c0f48a69bab24a445b093106bc6bfecb.mp4",
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/e973c52a61ba74582e28f43ca4e1f4af2440e19d.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset02",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/2f9233569261950282890e6fa47533f23e8f754d-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset01a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/ec645d0c076738c6a5f0b8d6067259385aa1a29a.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset03b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/6c9bbd2fbf19d1dd1a254969dbae836e4a0cbc93.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/c2ea550c5884e888280bb931fa5fcd181ff610e0.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/6f138e691fe29f6ea1984dea6ca2131ed995b7d2-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset06",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/aacc06371843306ca829e3512a6322c81731d6ed.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset07",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/5e0c03400ab039931d3e8f2bfd6dd7bba281d463-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset08",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/3b9765195004bf74037304774b1fcf7e076d912c.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset09",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/091977082fe33df2f10a209a321c0fcf9b301189-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset10",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/735e864ab7f3ef37c4f01499cf712100c85d317a.mp4",
+        "mimeType": "video/mp4"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Agency:",
+        "url": null,
+        "value": "&Walsh"
+      },
+      {
+        "label": "Creative Director:",
+        "url": null,
+        "value": "Jessica Walsh"
+      },
+      {
+        "label": "Strategist & Accounts:",
+        "url": null,
+        "value": "Ashley Einerson, Ann Kim, Maggie Giles"
+      },
+      {
+        "label": "Executive Producer:",
+        "url": null,
+        "value": "Luciana Almeida"
+      },
+      {
+        "label": "Production:",
+        "url": null,
+        "value": "Chanel Harper"
+      },
+      {
+        "label": "Art Director:",
+        "url": null,
+        "value": "Lucas Luz"
+      },
+      {
+        "label": "Lead Designer:",
+        "url": null,
+        "value": "Claudia Nazionale, Jessica Gracia"
+      },
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Julio Zukerman, Jonas Rudis, Igor Fajardo, Fernando Farfán, Kaan Iscan, Jordan Stokke, Marina Glikman, Sofia Noronha, Sasyk Mihal, Daniel Zepeda"
+      },
+      {
+        "label": "3D Design:",
+        "url": null,
+        "value": "Kaan Iscan"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Lucas Luz, Kaan Iscan, Claudia Nazionale, Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "50b6f433-b069-40b5-983c-c62cbbe00197",
+    "title": "Batch",
+    "slug": null,
+    "description": "BATCH revolutionizes post-production for film & television through it’s patent-protected batch processing technology that can create mattes for an entire film in hours instead of months. Created by and for filmmakers, BATCH allows more time in color & VFX sessions for creative artistry.",
+    "likes": 2,
+    "gridRow": 2,
+    "gridCol": 3,
+    "tags": [
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": null,
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/d76cc727630faf465a08ae51f8e0f20e7c737085.mp4",
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/c1077f85181dcd45ad7bf9c3accf595d3cf74418.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset02",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/258ea8f5419b59e1c19dbba6c7b18c40e558eeb0-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/4448424632b3d39001d2ed245f0cb7a3053f0eba.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/d008871cab1ad85ae64040fc51b7df83f9f58c14-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/9f42dd6ef867ba6b8a40c73ddf84bf418ccaf75d.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset06",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/cf58948cc6bddfb5c6a284b3a727106740e71c1a-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset07",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/18aae11299efcdcbdeb8e60b39a171850c567898.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset08",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/00e7847de8a4341242e8729f7068cd2cb310c02e-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset09",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/2b9dc05872f68d0a166c8372c461e8be37fefd25.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset10",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/bcf92a5d8df323cbdd2bedea5311c4f243017edc.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset11",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/cf41f98a77a6cff5a87afa229c5b61dfba5370db.mp4",
+        "mimeType": "video/mp4"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Agency:",
+        "url": null,
+        "value": "&Walsh"
+      },
+      {
+        "label": "Creative Direction:",
+        "url": null,
+        "value": "Jessica Walsh"
+      },
+      {
+        "label": "Brand Strategy & Copywriting:",
+        "url": null,
+        "value": "Lauren Walsh, Jessica Walsh"
+      },
+      {
+        "label": "Associate Creative Director:",
+        "url": null,
+        "value": "Lucas Luz"
+      },
+      {
+        "label": "Production:",
+        "url": null,
+        "value": "Jack Trego"
+      },
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Julia Micelli Pitta, Sasyk Mihal, Juanse Carvajal, Lucas Luz, Matthew Roop"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo, Matthew Roop, Julio Zukerman, Daniel Zepeda"
+      }
+    ]
+  },
+  {
+    "_id": "51100e4e-1815-48d2-9fb9-6df64210675e",
+    "title": "Colapso",
+    "slug": null,
+    "description": null,
+    "likes": 3,
+    "gridRow": 3,
+    "gridCol": 9,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/8ce9dbfacfa0e44f598fa63afffd16af79de2f48-1920x1080.jpg",
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "5182343b-1f00-4873-8f41-914aba544a8c",
+    "title": "São Paulo, BR\n© 2026",
+    "slug": null,
+    "description": null,
+    "likes": 3,
+    "gridRow": 2,
+    "gridCol": 6,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": "#161616",
+    "titleColor": null,
+    "titleHoverColor": "#eaeaea",
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "58c02e1a-ea45-4955-8347-f97da087a3e1",
+    "title": "FA4",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 4,
+    "gridCol": 1,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/e73d55bc920e9aab0dcd4c5c006a6864929e570a.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "63aa24d1-a1d7-4a85-9fca-de90fdc7e197",
+    "title": "Bocas",
+    "slug": null,
+    "description": null,
+    "likes": 1,
+    "gridRow": 4,
+    "gridCol": 4,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/f6d34ab066e3ff33ac066d7835d2e9e32a82dabd.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "6460ba64-bf36-44b3-a8ca-0fad7a61d207",
+    "title": "Give your favs\na like ♡",
+    "slug": null,
+    "description": null,
+    "likes": 7,
+    "gridRow": 1,
+    "gridCol": 9,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": "#161616",
+    "titleColor": null,
+    "titleHoverColor": "#eaeaea",
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "64d5f1b4-f904-4a3c-b74a-1bf0896fb549",
+    "title": "Take a goooood \nscroll around ☺︎",
+    "slug": null,
+    "description": null,
+    "likes": 9,
+    "gridRow": 2,
+    "gridCol": 1,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": "#161616",
+    "titleColor": null,
+    "titleHoverColor": "#eaeaea",
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "6a7f20b4-fa1b-42f0-acad-1372ed5d6073",
+    "title": "GTF 23'",
+    "slug": null,
+    "description": "Selva de pedra, mar de prédio, cidade da garoa. São Paulo é uma distopia. Mas é vida que pulsa em sua plenitude. A Gop Tun tem o prazer de ter nascido e crescido em São Paulo e vem exaltar essa cidade de contrastes com a segunda edição.São 33 artistas, a ponta de lança da música\neletrônica para a pista de dança, divididos em 4 pistas e 18 horas de festa.",
+    "likes": 5,
+    "gridRow": 2,
+    "gridCol": 4,
+    "tags": [
+      "id",
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/0473ed29281bba2d298f5eb2e5a0c8802d968944-3000x2996.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/ddf47c428b553db85d7d5cd10782d2892ddd9c43.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/372c8dfc7f8eceea846903be57cb37b1688296b2-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset02b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/c2bd4c80c01982954eed83e9b5900ab05d294c74.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/7c0bd1b3fa0b79651b1656c4875f98573bd1974a-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/21e02c0d72113739bfee7b0ab69641b685707be2-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/a8157c4380a0d187ef441adb816e54c5f9ca3d08-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Larissa Jennings, Igor Fajardo"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "766f5f22-831a-4751-9dba-1cf557990cd7",
+    "title": "Ano Zero",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 4,
+    "gridCol": 9,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/45fd1d8f7f6d2c5b8da93c3ab3b933f61ef29ed4-1080x1080.jpg",
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "77cdd103-677a-4d07-b835-251643d0cfea",
+    "title": "5/0",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 0,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "7931a71d-7aa2-4f2f-b48b-110fcecfe3b1",
+    "title": "COVID-19",
+    "slug": null,
+    "description": "Se a vacina ainda não existe, porque o brasileiro cisma em agir \ncomo se estivesse imunizado?\n\nFoi inspirado nesse cenário distópico que nasceu a ideia de criar uma campanha fajuta para a cura do corona.",
+    "likes": 0,
+    "gridRow": 2,
+    "gridCol": 9,
+    "tags": [
+      "3d",
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/eb8de35f800f998bc663b7bee90168a202458290-640x640.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/f951f4acc8bfc2991953f1ff7872666c8672d07b.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/f5aa30dcd770a7cbd38991d0eec33f24b0d3fafb-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/1ee7eb2b1b820669135a272e36646cf6b0bd8e6b-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/ee8319370b1d9ada5428eb3b801fc54f66e89018-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/932b7ba32f3ac4fbe4bd27e6886a81894097c270.mp4",
+        "mimeType": "video/mp4"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Lucas Noel"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      },
+      {
+        "label": "3D Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "7d4535bf-c370-47e7-8d50-a51372944986",
+    "title": "Coconut Cult",
+    "slug": null,
+    "description": null,
+    "likes": 5,
+    "gridRow": 3,
+    "gridCol": 6,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/22b155a7675c8c637c1fa31810009dd1eff4ce26.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "85774bc6-124f-4a2b-9df1-b62f21763db4",
+    "title": "Allyson Felix",
+    "slug": null,
+    "description": "Allyson Felix didn’t set out to be a revolutionary. She just wanted to run. But when the most decorated female Olympic track athlete faced a financial penalty after choosing motherhood, she found herself at the center of a cultural reckoning, pushing for basic maternity protections and challenging the very industry that had once celebrated her.",
+    "likes": 3,
+    "gridRow": 3,
+    "gridCol": 8,
+    "tags": [
+      "design",
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/62a74f7ea0c68b54e8efaa4feef06f52f3bbf837.mp4",
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/43628b3af9374794f3e36529ce9f33893ed5c0cb.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/8cd3d059ad5e628106f5bb70ca3f8df67be06495.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/d504a1f250061a35818ec38095a3b999e200f577-1080x1350.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/be2f8ffb30e96f7a43d9fedf5d87d0a50fc412be.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/98418a3a702d29fad0089761eb4784c5c76deb68.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/f1fbfed2966359aebb4f874c39aaa7459a339f19.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset06",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/adeef3f4bad1fdb283bc23547572447d22231f17.mp4",
+        "mimeType": "video/mp4"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Agency:",
+        "url": null,
+        "value": "&Walsh"
+      },
+      {
+        "label": "Creative Direction:",
+        "url": null,
+        "value": "Jessica Walsh"
+      },
+      {
+        "label": "Strategy:",
+        "url": null,
+        "value": "Ashley Einerson, Lauren Walsh"
+      },
+      {
+        "label": "Copywriting:",
+        "url": null,
+        "value": "Ashley Einerson, Lauren Walsh, Shannon Flood"
+      },
+      {
+        "label": "Executive Producer:",
+        "url": null,
+        "value": "Luciana Almeida"
+      },
+      {
+        "label": "Production:",
+        "url": null,
+        "value": "Chanel Harper"
+      },
+      {
+        "label": "Art Director:",
+        "url": null,
+        "value": "Elinor O’Brien"
+      },
+      {
+        "label": "Lead Designer:",
+        "url": null,
+        "value": "Jessica Gracia"
+      },
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Jessica Gracia, Igor Fajardo, Carol Pinheiro, Juanse Carvajal"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "87e7b215-61fb-4414-8e45-200abbfc01aa",
+    "title": "5/1",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 1,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "89e3e435-5e89-4883-aefc-eb8bb577fc16",
+    "title": "PDN",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 1,
+    "gridCol": 6,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/45adb0a6c6a7349faaa2912d7656f63dd928c6b6.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "8a5441c9-6f69-4ebf-8738-9b08793e12b8",
+    "title": "Google I/O",
+    "slug": null,
+    "description": null,
+    "likes": 4,
+    "gridRow": 2,
+    "gridCol": 2,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/5ac49fed52c4922e490299e1dfd5aa11a78f6723.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "8f107036-a3e3-4899-ba2c-0e579926e236",
+    "title": "Dump",
+    "slug": null,
+    "description": null,
+    "likes": 1,
+    "gridRow": 3,
+    "gridCol": 7,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": true,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/c3d99422182ffe2e69c082d0a0483e18be388baa.mp4",
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "90f5206e-5cf0-4c60-bd82-93f403911f7e",
+    "title": "Coolhaus",
+    "slug": null,
+    "description": "While some ice cream brands want you to try their Neapolitan, Coolhaus encourages you to savor the taste of fries dipped in your milkshake.",
+    "likes": 4,
+    "gridRow": 3,
+    "gridCol": 2,
+    "tags": [
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/37d1ad1ca72c181373abfecf31c6a6eb890be243.mp4",
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/24809c12a2b93e69e5e91843f9182fc88a678252-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/d2cb19a9267c2a19373d93c03a4285186550241f-1080x1266.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset02b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/975434907705c439a6821302797aeed47919a8ef.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/0516f437083963a47eabd8fd3a97c2055ff147e6.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset04a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/a25fe41c52afad7a42a33b607afb17e6bf1f6735-800x923.gif",
+        "mimeType": "image/gif"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset04b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/93e460c090cc21e46567d60208f03be6fd0b5cee-1080x1266.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/40bf3505548f992f75d49302d96c747884c89977-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset06a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/f930e2afa271058470c94dd6c696cf487acf6580-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset06b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/9c7e9e1712db30564dc3df183bb3901fb6f34894-800x923.gif",
+        "mimeType": "image/gif"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset07",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/5ce2124a902d0a4b84cc9bec457a7e2f0900b7ed-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset08a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/975ef2db7c32f1c8cd6a0731b2ed5e1a8242b6e8.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset08b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/5c7547bf24091c38b7faee761f76f60dc94f2b9e-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset09",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/36359519648e5ecbce9ab161b2f0415f1a939992-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset10",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/377965d20450aa979afa5f60752b38ba445c05f9-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Agency:",
+        "url": null,
+        "value": "&Walsh"
+      },
+      {
+        "label": "Creative Direction:",
+        "url": null,
+        "value": "Jessica Walsh"
+      },
+      {
+        "label": "Strategy:",
+        "url": null,
+        "value": "Lauren Walsh, Frank Lipari"
+      },
+      {
+        "label": "Copywriting:",
+        "url": null,
+        "value": "Mike Harris, Nechama Muchnik, Emily Motti"
+      },
+      {
+        "label": "Executive Producer:",
+        "url": null,
+        "value": "Luciana Almeida"
+      },
+      {
+        "label": "Production:",
+        "url": null,
+        "value": "Chanel Harper, Sofia Flores, Maggie Giles"
+      },
+      {
+        "label": "Art Director:",
+        "url": null,
+        "value": "Lucas Luz"
+      },
+      {
+        "label": "Lead Designer:",
+        "url": null,
+        "value": "Cristina Giménez, Victor Jobim"
+      },
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Jessica Gracia, Carol Pinheiro, Fabrizio Morra, Leila Čičić, Sasyk Mihal, Fernando Farfán, Marina Glikman, Sofia Noronha, Claudia Nazionale, Riisa Lia"
+      },
+      {
+        "label": "3D Design:",
+        "url": null,
+        "value": "Lorenzo Cobo, Kaan Iscan"
+      },
+      {
+        "label": "Illustration:",
+        "url": null,
+        "value": "Julio Zukerman"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo, Daniel Zepeda"
+      },
+      {
+        "label": "Product Photography:",
+        "url": null,
+        "value": "Henry Hargreaves"
+      },
+      {
+        "label": "Food & Prop Styling:",
+        "url": null,
+        "value": "Charlotte Omnès"
+      },
+      {
+        "label": "Brand Retouching:",
+        "url": null,
+        "value": "Daniel Plateado"
+      },
+      {
+        "label": "Case Study Photography:",
+        "url": null,
+        "value": "Jarett Loeffle"
+      },
+      {
+        "label": "Case Study Food & Prop Styling:",
+        "url": null,
+        "value": "Chelsea Finkel"
+      },
+      {
+        "label": "Case Retouching:",
+        "url": null,
+        "value": "Igor Fajardo, Julio Zukerman"
+      }
+    ]
+  },
+  {
+    "_id": "9470e816-41cc-45dd-8e39-909324a72030",
+    "title": "5/6",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 6,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "9482cf9e-119c-4d55-9ab9-30698443adcc",
+    "title": "O Fundo",
+    "slug": null,
+    "description": null,
+    "likes": 1,
+    "gridRow": 4,
+    "gridCol": 6,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/e05b014688677f4e1d7de3cb59235a985c4b265e-1080x1080.jpg",
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "976f5b4b-ba47-416a-9b26-36858e1dbe49",
+    "title": "5/8",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 8,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "a09658fd-e0a9-4b3e-a867-b4ca2cc52523",
+    "title": "5/7",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 7,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "b82e0b10-7e98-4be8-8a1b-4b050a7cbc7f",
+    "title": "Becks",
+    "slug": null,
+    "description": null,
+    "likes": 4,
+    "gridRow": 2,
+    "gridCol": 5,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/2996b47b3feaf8e9f4f33153eeb1cd18fdd83e62.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "b83972af-5e23-409d-9f43-0348d57b024e",
+    "title": "5/4",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 4,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "bbf3d4e3-91e6-49d5-a49c-63cd41cf6c02",
+    "title": "GoodRx",
+    "slug": null,
+    "description": "GoodRx invited &Walsh to imagine an identity for a brand campaign that shows everyone there’s an incredible way to wrangle savings on overpriced medications. The system flexes across mediums, from digital to social to OOH to TV. We developed a custom typeface that was used for graphics and the TVC.",
+    "likes": 1,
+    "gridRow": 1,
+    "gridCol": 2,
+    "tags": [
+      "design",
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": null,
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/43afc9efa29b9f51ca2e99b483fc688e612bccdf-640x738.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/55f7476cdb843e5a612b80afd95716f93e012e24.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/128f241583a7ef1ab671b463330b9486d81f8aae-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/9a9c44d034a21f5380de147d29078b8025c17517-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/948a678f8105742427ebe1a1457baadbc119075d-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/eb4a0c27619e717c05dba03bd898d68126d0a362.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/d6d4e6729470edc0dc5d504840ee5c6f2f38e01a-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset06",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/3903d4bd9992ce82b45149c88cd5bf1526c9d80a.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset07a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/2c76599dae3a57d248ea72f8ae7dcbe7ac4a13a1-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset07b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/df43dbcacc825f732bfdc1e7d62c0d851f96bd54-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset08",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/026aa4e5ca969962bb5a5995957c84f34d98fed3-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset09",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/4543d4079a2579468dbcd6ec0a08132349ec7155.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset10a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/a20ed9b74d4f65cd6ded0070db44cd43fe6bee3e-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset10b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/71d86da56e14eb39861d42d2d3268714f45c3ead.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset11",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/e388c9950dcbb07666c2ce9f2222184c05e2efb9.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "half",
+        "caption": "Asset12a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/b5e3c95e086dd454a990d0fc61c9a0340a48e87f.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset12b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/ccdc14dc4e67a9a06520838b49a61d8c44437e24-1080x1246.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset13",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/3209504328de69f08863e086c27cd3ea0a74f76e.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset14",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/07f187e0251cb915b16c1cc47d3759e6e407270a-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Creative Studio:",
+        "url": null,
+        "value": "AD—LIKE OBJECTS, Ben Becker, Nick Loftus"
+      },
+      {
+        "label": "Design Agency:",
+        "url": null,
+        "value": "&Walsh"
+      },
+      {
+        "label": "Creative Director:",
+        "url": null,
+        "value": "Jessica Walsh"
+      },
+      {
+        "label": "Accounts:",
+        "url": null,
+        "value": "Ashley Einerson"
+      },
+      {
+        "label": "Associate Creative Director:",
+        "url": null,
+        "value": "Lucas Luz"
+      },
+      {
+        "label": "Copywriting:",
+        "url": null,
+        "value": "AD—LIKE OBJECTS"
+      },
+      {
+        "label": "Production:",
+        "url": null,
+        "value": "Chelsea Frimpong"
+      },
+      {
+        "label": "Lead Designer:",
+        "url": null,
+        "value": "Sasyk Mihal, Igor Fajardo"
+      },
+      {
+        "label": "Custom Type:",
+        "url": null,
+        "value": "Julio Zuckerman"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      },
+      {
+        "label": "Designers:",
+        "url": null,
+        "value": "Carol Pinheiro, Jess Garcia, Pedro Alamorim, Tania Delgado"
+      },
+      {
+        "label": "Director:",
+        "url": null,
+        "value": "Dave Laden"
+      },
+      {
+        "label": "Film:",
+        "url": null,
+        "value": "Hungry Man"
+      },
+      {
+        "label": "VFX:",
+        "url": null,
+        "value": "Parliament, Legacy Effects"
+      },
+      {
+        "label": "Color:",
+        "url": null,
+        "value": "Company 3"
+      },
+      {
+        "label": "Music:",
+        "url": null,
+        "value": "BUTTER Music and Sound"
+      },
+      {
+        "label": "Audio:",
+        "url": null,
+        "value": "Barking Owl, Eleven"
+      },
+      {
+        "label": "Photography:",
+        "url": null,
+        "value": "Zachary Scott"
+      }
+    ]
+  },
+  {
+    "_id": "bf519763-5c63-4586-9ab2-3c7bd190c3db",
+    "title": "5/9",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 9,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "c5f3c45f-e90d-4fb1-a51a-4e65416e0e27",
+    "title": "Fall Guys",
+    "slug": null,
+    "description": null,
+    "likes": 1,
+    "gridRow": 1,
+    "gridCol": 4,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/c7f14b9b3701c75c4f4907b02975f26efe39a3b7.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "cca7863e-6ac6-4ae3-b6f3-ca504493a637",
+    "title": "Rage",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 3,
+    "gridCol": 0,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/c89be2b3856c03be53619e5ba22df06eb70308ae.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "cdb7fc14-6c37-4370-a5fa-1ff71f3fa6a9",
+    "title": "Valen",
+    "slug": null,
+    "description": null,
+    "likes": 1,
+    "gridRow": 1,
+    "gridCol": 7,
+    "tags": [
+      "design",
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/f3ab765cd838a746ddf64afd20e302708fbaebec-160x160.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/3eabffe46ce9ce93593258e430bf4789afbfc840.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset02",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/11be2a4a9f680c4c9644d18591724c8bf67f0699-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/0b6587334f99923dc33a38b7426b89a6639fd5fa-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/35798ff94e96b41ef27d8edb5adc2c7ae628bf1e.mp4",
+        "mimeType": "video/mp4"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Art Director:",
+        "url": null,
+        "value": "Igor Fajardo"
+      },
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Enzo Santos, Victoria Mendonça, Carolina Esteves, Igor Fajardo"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Thiago Cubas, Igor Fajardo"
+      },
+      {
+        "label": "Photography:",
+        "url": null,
+        "value": "Luis Vizu"
+      }
+    ]
+  },
+  {
+    "_id": "d063df21-8423-4c9b-ab5c-519d7286de04",
+    "title": "Olha eu aqui!",
+    "slug": null,
+    "description": null,
+    "likes": 8,
+    "gridRow": 4,
+    "gridCol": 3,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": "#161616",
+    "titleColor": null,
+    "titleHoverColor": "#eaeaea",
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/12c0b0ffaf6e7631ced59eadbd295918a94c3d49-640x640.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "d9765309-8215-42aa-9588-be6ceb36e297",
+    "title": "Fall Guys 2",
+    "slug": null,
+    "description": null,
+    "likes": 1,
+    "gridRow": 4,
+    "gridCol": 7,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/1de39f80b083e2fe6a12e8855f72edb0422fab09-1080x1080.jpg",
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "de75eb0e-0f20-47c3-b692-e9672807bd93",
+    "title": "Oblívio",
+    "slug": null,
+    "description": null,
+    "likes": 4,
+    "gridRow": 1,
+    "gridCol": 1,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/463c871bf261bbe1e64e0eb295f29b15fa1dc9b3.mp4",
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "dfae9e29-7e9a-4189-ba6a-686f9c5902a1",
+    "title": "Nuevo,",
+    "slug": null,
+    "description": "Nuevo, é um escritório de Brasília especializado em Arquitetura Vernacular, cujos projetos são caracterizados pelo uso de materiais e recursos do próprio ambiente onde essas edificações estão inseridas.",
+    "likes": 1,
+    "gridRow": 4,
+    "gridCol": 2,
+    "tags": [
+      "branding",
+      "motion"
+    ],
+    "hasProjectPage": null,
+    "showName": null,
+    "hoverType": null,
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/679c49e1e38fb2bf30e265ffac47bf2e9a8216a5-640x640.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/7aec0f6efe18887e8b495d642ab7d0e508fb3fd1.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/7ff25b1a5d8f6d70cb9f3d3fe44bc7547e4491b6-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/effc54bd43e2c69eb48b83aacae2016cb5fc35b8-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/0b084ea90dc6e6f88cddd0347eacc1dc5687c250-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset04a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/d8c7f04aed5ee26d55b7432ab8ce7bb4ef998e81-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset04b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/b4d9057f88e230528b992dd1b98f75f45af140ec-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/e5f4c665670f7d5ff4af6796d2815e523b818ea4-1920x2000.gif",
+        "mimeType": "image/gif"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset06",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/ded8f98e6e807df0b9327e25f05184efb315fa67-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset07a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/b20bea5d50396f6c3d56ef51d2f6df7442d7c8ad-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset07b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/1ad44ef3f6dc318cb291a570dd2490d3cbfc89cf-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset08",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/52ed5b29231d6074d4c8816ec3b1274ba18d839a-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Hermes Miranda, Igor Fajardo"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      },
+      {
+        "label": "Photography:",
+        "url": null,
+        "value": "Thales Barnuevo"
+      }
+    ]
+  },
+  {
+    "_id": "e57af11f-d955-48ee-a437-1013d5d44ebe",
+    "title": "FFFH",
+    "slug": null,
+    "description": "Female Founders for Harris is an initiative by women business leaders big and small for the Harris camapign. The goal is to amass the largest ever group of civically minded women business owners across the country in support of the campaign.",
+    "likes": 2,
+    "gridRow": 4,
+    "gridCol": 5,
+    "tags": [
+      "motion"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/8b4e38b4ffdf8e68a96a46485c26055bf8418c9b.mp4",
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/dfe9c20946e003ac1563dda6b9b53d908068897c.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset02",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/0c57898b4ffac6cff732e9e602eec1a8828e415a.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/be01a86100c9a46aed5b0a38756f4bc331e986f9-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/87dec5c330f9f5515bbda27cdd0389255e2863b8-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/279456af8a4cdca04f46c0556cbd0077c5a13c96-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Agency:",
+        "url": null,
+        "value": "&Walsh"
+      },
+      {
+        "label": "Creative Direction:",
+        "url": null,
+        "value": "Jessica Walsh"
+      },
+      {
+        "label": "Strategy:",
+        "url": null,
+        "value": "Lauren Walsh"
+      },
+      {
+        "label": "VP Client Partnerships:",
+        "url": null,
+        "value": "Ashley Einerson"
+      },
+      {
+        "label": "Production:",
+        "url": null,
+        "value": "Glauber Nicolau"
+      },
+      {
+        "label": "Art Director:",
+        "url": null,
+        "value": "Elinor O’Brien"
+      },
+      {
+        "label": "Lead Designer:",
+        "url": null,
+        "value": "Elinor O’Brien & Jessica Gracia"
+      },
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Lucas Luz, Jordan Stokke, Victor Jobim, Igor Fajardo, Lucas D'Ascenção"
+      },
+      {
+        "label": "3D Design:",
+        "url": null,
+        "value": "Daniel Zepeda & Kaan Iscan"
+      }
+    ]
+  },
+  {
+    "_id": "f109e3b7-48cc-4f58-8792-fcfe77c55678",
+    "title": "Candombá",
+    "slug": null,
+    "description": null,
+    "likes": 1,
+    "gridRow": 2,
+    "gridCol": 8,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/c77efcec2a9f85f2db7a28e018b841f5e8cbd9b4-640x640.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "f1bddaee-6d45-4230-958a-9d3646f4dfad",
+    "title": "AKQA/Coala.lab",
+    "slug": null,
+    "description": null,
+    "likes": 1,
+    "gridRow": 4,
+    "gridCol": 0,
+    "tags": [
+      "3d"
+    ],
+    "hasProjectPage": true,
+    "showName": true,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/b7b81cd9432a57fa9250385f5b7e3802b63c6fa9-225x225.jpg",
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/e4d7aa60d96db226ca48878e4fa16dd5b5075ec4.mp4",
+        "mimeType": "video/mp4"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Art Direction:",
+        "url": null,
+        "value": "Christiano Vellutini"
+      },
+      {
+        "label": "3D Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "f1e406e0-a5f9-4bf5-9478-1fc72ab2069d",
+    "title": "Off Bounds",
+    "slug": null,
+    "description": "Off Bounds é uma web série que busca desmistificar o conceito de liderança como algo utópico e inalcançável. Por trás de cada trajetória de sucesso, líderes de todas as partes do planeta enfrentam problemas mundanos como nós.",
+    "likes": 1,
+    "gridRow": 1,
+    "gridCol": 5,
+    "tags": [
+      "branding",
+      "motion"
+    ],
+    "hasProjectPage": null,
+    "showName": null,
+    "hoverType": null,
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/b8992a3c2b12f703a614b5d73e328b302edbaf0c.mp4",
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset01",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/c9ba77e22d4b0358b5af59f5ade117ed88b4ed03.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02a",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/b6173a1d075a880889d3f6154c3e764c39065de5-600x600.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "half",
+        "caption": "Asset02b",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/59c266ab57f6ef7bef6e21647ab7dbdfa41c55e5-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset03",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/2d86def80e13318fe6e39d45623adbc43391154b.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset04",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/fd9e0131188320d5c6b331a1015fd877c3229eaf-1920x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/dd63152df3073b8cfd7355b8b9a9057cde5a52c3.mp4",
+        "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryVideo",
+        "layout": "full",
+        "caption": "Asset06",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/ec52cc5db585c81716e50d482d3524890ff3ca9c.mp4",
+        "mimeType": "video/mp4"
+      }
+    ],
+    "credits": [
+      {
+        "label": "Brand Strategy & Copywriting:",
+        "url": null,
+        "value": "Lucila Thompson, Lucas Noel, Igor Fajardo"
+      },
+      {
+        "label": "Design:",
+        "url": null,
+        "value": "Lucas Noel, Igor Fajardo"
+      },
+      {
+        "label": "Motion Design:",
+        "url": null,
+        "value": "Igor Fajardo"
+      }
+    ]
+  },
+  {
+    "_id": "faf6b6cc-fed6-4380-ac2f-f3bfb3ee5a78",
+    "title": "5/2",
+    "slug": null,
+    "description": null,
+    "likes": 0,
+    "gridRow": 5,
+    "gridCol": 2,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "color",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": null,
+    "gallery": [],
+    "credits": null
+  },
+  {
+    "_id": "fd7c8e9e-b1cf-4a2a-9710-3d1326c1be70",
+    "title": "Felix",
+    "slug": null,
+    "description": null,
+    "likes": 2,
+    "gridRow": 2,
+    "gridCol": 0,
+    "tags": null,
+    "hasProjectPage": false,
+    "showName": false,
+    "hoverType": "image",
+    "hoverColor": null,
+    "titleColor": null,
+    "titleHoverColor": null,
+    "thumbnailUrl": null,
+    "thumbnailVideoUrl": null,
+    "hoverImageUrl": null,
+    "hoverVideoUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/ccb0593f9f75b4e969bab05db5b332835c57e42e.mp4",
+    "gallery": [],
+    "credits": null
+  }
+]
