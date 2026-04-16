@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T20:34:31.614Z",
+  "generatedAt": "2026-04-16T21:38:01.759Z",
   "bucket": "igor-wtf-assets",
   "publicBaseUrl": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev",
   "assets": [
@@ -517,10 +517,10 @@
       "originalFilename": "IgorF_Misc_Asset03.mp4"
     },
     {
-      "id": "image-0473ed29281bba2d298f5eb2e5a0c8802d968944-3000x2996-jpg",
-      "key": "sanity/images/0473ed29281bba2d298f5eb2e5a0c8802d968944-3000x2996.jpg",
-      "r2Url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/0473ed29281bba2d298f5eb2e5a0c8802d968944-3000x2996.jpg",
-      "size": 8222333,
+      "id": "image-182b51cebe6eb3275286d1cfa599752b6e35635d-640x640-jpg",
+      "key": "sanity/images/182b51cebe6eb3275286d1cfa599752b6e35635d-640x640.jpg",
+      "r2Url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/182b51cebe6eb3275286d1cfa599752b6e35635d-640x640.jpg",
+      "size": 213985,
       "mimeType": "image/jpeg",
       "extension": "jpg",
       "originalFilename": null
@@ -1779,10 +1779,10 @@
       "size": 11228538
     },
     {
-      "id": "image-0473ed29281bba2d298f5eb2e5a0c8802d968944-3000x2996-jpg",
-      "key": "sanity/images/0473ed29281bba2d298f5eb2e5a0c8802d968944-3000x2996.jpg",
-      "status": "skipped",
-      "size": 8222333
+      "id": "image-182b51cebe6eb3275286d1cfa599752b6e35635d-640x640-jpg",
+      "key": "sanity/images/182b51cebe6eb3275286d1cfa599752b6e35635d-640x640.jpg",
+      "status": "uploaded",
+      "size": 64624
     },
     {
       "id": "file-ddf47c428b553db85d7d5cd10782d2892ddd9c43-mp4",
