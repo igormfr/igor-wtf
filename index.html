@@ -438,7 +438,8 @@ function createCellMedia(url){
     return video;
   }
   const img=document.createElement("img");
-  img.src=url;img.alt="";img.loading="lazy";img.decoding="async";
+  img.src=url;img.alt="";img.loading="eager";img.decoding="async";
+  if("fetchPriority" in img)img.fetchPriority="high";
   return img;
 }
 function wireCellVideo(cell,media){
@@ -463,18 +464,14 @@ function warmCellMedia(){
     add(videoUrls,cfg.thumbnailVideoUrl);
     add(videoUrls,cfg.hoverVideoUrl);
   }}
-  const warmImages=()=>warmQueue(imageUrls,4,(url,done)=>{const img=new Image();img.decoding="async";img.onload=img.onerror=done;img.src=url;});
-  const warmVideos=()=>warmQueue(videoUrls,2,(url,done)=>{const video=document.createElement("video");video.muted=true;video.playsInline=true;video.preload="metadata";video.onloadedmetadata=video.onerror=done;video.src=url;video.load();});
-  scheduleIdle(()=>{warmImages();setTimeout(warmVideos,1200);});
+  imageUrls.forEach((url)=>{const link=document.createElement("link");link.rel="preload";link.as="image";link.href=url;document.head.appendChild(link);});
+  warmQueue(imageUrls,10,(url,done)=>{const img=new Image();img.decoding="async";if("fetchPriority" in img)img.fetchPriority="high";img.onload=img.onerror=done;img.src=url;});
+  setTimeout(()=>warmQueue(videoUrls,3,(url,done)=>{const video=document.createElement("video");video.muted=true;video.playsInline=true;video.preload="auto";video.oncanplay=video.onloadeddata=video.onerror=done;video.src=url;video.load();}),350);
 }
 function warmQueue(urls,limit,loader){
   let index=0,active=0;
   const pump=()=>{while(active<limit&&index<urls.length){active++;let doneCalled=false;const done=()=>{if(doneCalled)return;doneCalled=true;active--;pump();};const timer=setTimeout(done,5000);loader(urls[index++],()=>{clearTimeout(timer);done();});}};
   pump();
-}
-function scheduleIdle(fn){
-  if("requestIdleCallback" in window)requestIdleCallback(fn,{timeout:1200});
-  else setTimeout(fn,600);
 }
 function buildGrid(){
   calcDims();applySize();setDefault();grid.innerHTML="";

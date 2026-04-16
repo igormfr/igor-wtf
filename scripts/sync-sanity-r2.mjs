@@ -30,6 +30,7 @@ const SANITY_QUERY = `*[_type=="project"]{
 const args = new Set(process.argv.slice(2))
 const dryRun = args.has('--dry-run')
 const force = args.has('--force')
+const ASSET_CACHE_CONTROL = 'public, max-age=31536000, immutable'
 
 loadEnv(path.join(rootDir, '.env'))
 
@@ -238,6 +239,7 @@ async function putObject(asset, body) {
   const response = await signedR2Request('PUT', asset.key, {
     body,
     contentType: asset.mimeType || 'application/octet-stream',
+    cacheControl: ASSET_CACHE_CONTROL,
   })
   if (!response.ok) {
     throw new Error(`R2 PUT failed for ${asset.key}: ${response.status} ${await response.text()}`)
@@ -257,6 +259,8 @@ async function signedR2Request(method, key, options = {}) {
     'x-amz-content-sha256': payloadHash,
     'x-amz-date': amzDate,
   }
+  if (options.contentType) headers['content-type'] = options.contentType
+  if (options.cacheControl) headers['cache-control'] = options.cacheControl
 
   const signedHeaders = Object.keys(headers).sort().join(';')
   const canonicalHeaders = Object.keys(headers)
@@ -281,7 +285,6 @@ async function signedR2Request(method, key, options = {}) {
   const signature = hmacHex(signingKey(config.secretAccessKey, dateStamp), stringToSign)
 
   headers.authorization = `AWS4-HMAC-SHA256 Credential=${config.accessKeyId}/${credentialScope}, SignedHeaders=${signedHeaders}, Signature=${signature}`
-  if (options.contentType) headers['content-type'] = options.contentType
 
   return fetch(url, {
     method,
