@@ -556,7 +556,7 @@ function mTag(it,iv,cls){
   if(iv) return '<div class="'+cls+'"'+arStyle+'><video data-src="'+escapeAttr(it.url)+'" preload="none" muted loop playsinline onloadeddata="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\');requestAnimationFrame(positionMobileClose)"></video></div>';
   const imgW=cls.includes("half")?900:1600;
   const optUrl=sanityImg(it.url,imgW,90)||it.url||"";
-  return '<div class="'+cls+'"'+arStyle+'><img src="'+escapeAttr(optUrl)+'" alt="'+escapeAttr(it.caption)+'" loading="lazy" decoding="async" onload="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\');requestAnimationFrame(positionMobileClose)"></div>';
+  return '<div class="'+cls+'"'+arStyle+'><img src="'+escapeAttr(optUrl)+'" alt="'+escapeAttr(it.caption)+'" loading="eager" fetchpriority="high" decoding="async" onload="this.parentElement.style.aspectRatio=\'\';this.parentElement.classList.add(\'loaded\');requestAnimationFrame(positionMobileClose)"></div>';
 }
 
 let lazyVideoObserver=null;
