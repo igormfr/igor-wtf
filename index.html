@@ -6,6 +6,8 @@
 <title>igor.wtf</title>
 <link rel="icon" type="image/png" sizes="96x96" href="/Memoji.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/Memoji.png">
+<link rel="preconnect" href="https://pub-54992137158d4cc79671908850ff8efb.r2.dev" crossorigin>
+<link rel="dns-prefetch" href="//pub-54992137158d4cc79671908850ff8efb.r2.dev">
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
@@ -364,8 +366,6 @@ async function fetchProjects(){
     console.warn("Static project snapshot unavailable, falling back to Sanity:",e);
     projects=await fetchSanityProjects();
   }
-  const liveLikes=await fetchLiveLikes();
-  if(liveLikes)projects.forEach((p)=>{if(p&&p._id&&liveLikes[p._id]!=null)p.likes=liveLikes[p._id];});
   return projects;
 }
 async function fetchSanityProjects(){
@@ -386,6 +386,24 @@ async function fetchLiveLikes(){
 function hasLiked(id){return localStorage.getItem("liked_"+id)==="1";}
 function setLiked(id){localStorage.setItem("liked_"+id,"1");}
 async function patchLike(id){try{await fetch("/api/like",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({id})});}catch(e){console.error("Like error:",e);}}
+function getProjectLikes(id){
+  let likes=0;
+  for(let r=0;r<ROWS;r++){for(let c=0;c<BASE_COLS;c++){const cfg=cellData[r][c];if(cfg._id===id)likes=Math.max(likes,cfg.likes||0);}}
+  return likes;
+}
+function setProjectLikes(id,likes){
+  const next=Math.max(0,Number(likes)||0);
+  for(let r=0;r<ROWS;r++){for(let c=0;c<BASE_COLS;c++){const cfg=cellData[r][c];if(cfg._id===id)cfg.likes=next;}}
+  document.querySelectorAll("[data-like-id]").forEach((el)=>{if(el.dataset.likeId===id)el.textContent=next;});
+}
+function applyLiveLikes(liveLikes){
+  if(!liveLikes)return;
+  Object.keys(liveLikes).forEach((id)=>setProjectLikes(id,Math.max(getProjectLikes(id),liveLikes[id]||0)));
+}
+async function refreshLiveLikes(){
+  const liveLikes=await fetchLiveLikes();
+  applyLiveLikes(liveLikes);
+}
 
 // Bandwidth optimization: append Sanity CDN image transforms
 function sanityImg(url,w,q){
@@ -415,7 +433,7 @@ function isVideoUrl(url){
 function createCellMedia(url){
   if(isVideoUrl(url)){
     const video=document.createElement("video");
-    video.src=url;video.muted=true;video.loop=true;video.playsInline=true;video.preload="metadata";
+    video.dataset.src=url;video.muted=true;video.loop=true;video.playsInline=true;video.preload="none";
     video.setAttribute("playsinline","");video.setAttribute("webkit-playsinline","");
     return video;
   }
@@ -425,7 +443,8 @@ function createCellMedia(url){
 }
 function wireCellVideo(cell,media){
   if(!media||media.tagName!=="VIDEO")return;
-  const play=()=>media.play().catch(()=>{});
+  const load=()=>{if(!media.src&&media.dataset.src){media.src=media.dataset.src;media.preload="metadata";media.load();}};
+  const play=()=>{load();media.play().catch(()=>{});};
   const pause=()=>media.pause();
   if(_isTouch){
     cell.addEventListener("touchstart",play,{passive:true});
@@ -433,6 +452,29 @@ function wireCellVideo(cell,media){
     cell.addEventListener("mouseenter",play);
     cell.addEventListener("mouseleave",pause);
   }
+}
+function warmCellMedia(){
+  const imageUrls=[],videoUrls=[],seen=new Set();
+  const add=(list,url)=>{if(!url||seen.has(url))return;seen.add(url);list.push(url);};
+  for(let r=0;r<ROWS;r++){for(let c=0;c<BASE_COLS;c++){
+    const cfg=cellData[r][c];
+    add(isVideoUrl(cfg.thumbnailUrl)?videoUrls:imageUrls,cfg.thumbnailUrl);
+    add(isVideoUrl(cfg.hoverImageUrl)?videoUrls:imageUrls,cfg.hoverImageUrl);
+    add(videoUrls,cfg.thumbnailVideoUrl);
+    add(videoUrls,cfg.hoverVideoUrl);
+  }}
+  const warmImages=()=>warmQueue(imageUrls,4,(url,done)=>{const img=new Image();img.decoding="async";img.onload=img.onerror=done;img.src=url;});
+  const warmVideos=()=>warmQueue(videoUrls,2,(url,done)=>{const video=document.createElement("video");video.muted=true;video.playsInline=true;video.preload="metadata";video.onloadedmetadata=video.onerror=done;video.src=url;video.load();});
+  scheduleIdle(()=>{warmImages();setTimeout(warmVideos,1200);});
+}
+function warmQueue(urls,limit,loader){
+  let index=0,active=0;
+  const pump=()=>{while(active<limit&&index<urls.length){active++;let doneCalled=false;const done=()=>{if(doneCalled)return;doneCalled=true;active--;pump();};const timer=setTimeout(done,5000);loader(urls[index++],()=>{clearTimeout(timer);done();});}};
+  pump();
+}
+function scheduleIdle(fn){
+  if("requestIdleCallback" in window)requestIdleCallback(fn,{timeout:1200});
+  else setTimeout(fn,600);
 }
 function buildGrid(){
   calcDims();applySize();setDefault();grid.innerHTML="";
@@ -479,10 +521,10 @@ function buildGrid(){
       const bot=document.createElement("div");bot.className="cell-bottom";
       const tag=document.createElement("div");tag.className="cell-tag";tag.textContent=cfg.tag;
       const lk=document.createElement("div");lk.className="cell-likes";
-      const cnt=document.createElement("span");cnt.textContent=cfg.likes||0;
+      const cnt=document.createElement("span");cnt.className="cell-like-count";cnt.dataset.likeId=cfg._id;cnt.textContent=cfg.likes||0;
       const ht=document.createElement("span");ht.className="cell-heart";
       if(hasLiked(cfg._id)){ht.textContent="\u2665\uFE0E";ht.classList.add("liked");}else{ht.textContent="\u2661\uFE0E";}
-      ht.addEventListener("click",(e)=>{e.stopPropagation();if(hasLiked(cfg._id))return;cfg.likes=(cfg.likes||0)+1;ht.textContent="\u2665\uFE0E";ht.classList.add("liked");cnt.textContent=cfg.likes;setLiked(cfg._id);patchLike(cfg._id);});
+      ht.addEventListener("click",(e)=>{e.stopPropagation();if(hasLiked(cfg._id))return;setProjectLikes(cfg._id,(cfg.likes||0)+1);ht.textContent="\u2665\uFE0E";ht.classList.add("liked");setLiked(cfg._id);patchLike(cfg._id);});
       lk.appendChild(cnt);lk.appendChild(ht);bot.appendChild(tag);bot.appendChild(lk);cell.appendChild(bot);
       if(!_isTouch) cell.addEventListener("click",()=>openLightbox(cfg));
     } else if(isP){
@@ -492,10 +534,10 @@ function buildGrid(){
       const bot=document.createElement("div");bot.className="cell-bottom";
       const sp=document.createElement("div"); // empty spacer for alignment
       const lk=document.createElement("div");lk.className="cell-likes cell-likes-pill";
-      const cnt=document.createElement("span");cnt.textContent=cfg.likes||0;
+      const cnt=document.createElement("span");cnt.className="cell-like-count";cnt.dataset.likeId=cfg._id;cnt.textContent=cfg.likes||0;
       const ht=document.createElement("span");ht.className="cell-heart";
       if(hasLiked(cfg._id)){ht.textContent="\u2665\uFE0E";ht.classList.add("liked");}else{ht.textContent="\u2661\uFE0E";}
-      ht.addEventListener("click",(e)=>{e.stopPropagation();if(hasLiked(cfg._id))return;cfg.likes=(cfg.likes||0)+1;ht.textContent="\u2665\uFE0E";ht.classList.add("liked");cnt.textContent=cfg.likes;setLiked(cfg._id);patchLike(cfg._id);});
+      ht.addEventListener("click",(e)=>{e.stopPropagation();if(hasLiked(cfg._id))return;setProjectLikes(cfg._id,(cfg.likes||0)+1);ht.textContent="\u2665\uFE0E";ht.classList.add("liked");setLiked(cfg._id);patchLike(cfg._id);});
       lk.appendChild(cnt);lk.appendChild(ht);bot.appendChild(sp);bot.appendChild(lk);cell.appendChild(bot);
     }
     grid.appendChild(cell);
@@ -1088,6 +1130,8 @@ if(isTouchDevice){
     if(p.tags&&p.tags.length)cell.tag=p.tags.slice(0,2).map(t=>"#"+t).join("  ");
     cell.likes=p.likes||0;cell.thumbnailUrl=p.thumbnailUrl;cell.thumbnailVideoUrl=p.thumbnailVideoUrl||null;cell.titleColor=p.titleColor||null;cell.titleHoverColor=p.titleHoverColor||null;cell.gallery=p.gallery||[];cell.credits=p.credits||[];cell.description=p.description||"";cell.hoverType=p.hoverType||"color";cell.hoverColor=p.hoverColor||"#ebff3e";cell.hoverImageUrl=p.hoverImageUrl||null;cell.hoverVideoUrl=p.hoverVideoUrl||null;});
   buildGrid();
+  refreshLiveLikes();
+  warmCellMedia();
   offset=-CYCLE_W + 1200;
   entryAnim=true; entryVel=-30;
   grid.style.transform="translateX("+offset+"px)";
