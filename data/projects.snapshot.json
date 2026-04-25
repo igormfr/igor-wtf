@@ -831,7 +831,7 @@
     "title": "Take a goooood \nscroll around ☺︎",
     "slug": null,
     "description": null,
-    "likes": 10,
+    "likes": 12,
     "gridRow": 2,
     "gridCol": 1,
     "tags": null,
@@ -1972,15 +1972,22 @@
       {
         "_type": "galleryImage",
         "layout": "full",
-        "caption": "Asset02",
-        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/11be2a4a9f680c4c9644d18591724c8bf67f0699-1920x1080.jpg",
+        "caption": "Asset07",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/d02a7f685ecfb4345242cc408bdbe37924f50945-1920x1080.jpg",
         "mimeType": "image/jpeg"
       },
       {
         "_type": "galleryImage",
         "layout": "full",
-        "caption": "Asset03",
-        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/0b6587334f99923dc33a38b7426b89a6639fd5fa-1920x1080.jpg",
+        "caption": "Asset08",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/d1a475c34be2a5ae642a00e69d62c2f0c6a00331-1080x1080.jpg",
+        "mimeType": "image/jpeg"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset05",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/4aecc736b3443dfdc27bb6726a525160723a72f6-1920x1080.jpg",
         "mimeType": "image/jpeg"
       },
       {
@@ -1989,6 +1996,13 @@
         "caption": "Asset04",
         "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/files/35798ff94e96b41ef27d8edb5adc2c7ae628bf1e.mp4",
         "mimeType": "video/mp4"
+      },
+      {
+        "_type": "galleryImage",
+        "layout": "full",
+        "caption": "Asset06",
+        "url": "https://pub-54992137158d4cc79671908850ff8efb.r2.dev/sanity/images/367dce95ed042d85f1fdf1d4303f76e5e9c3f017-1920x1080.jpg",
+        "mimeType": "image/jpeg"
       }
     ],
     "credits": [
@@ -2310,7 +2324,7 @@
     "title": "Candombá",
     "slug": null,
     "description": null,
-    "likes": 1,
+    "likes": 2,
     "gridRow": 2,
     "gridCol": 8,
     "tags": null,
